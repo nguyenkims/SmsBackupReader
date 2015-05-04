@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html ng-app="smsViewerApp">
+<head>
+	<title> Read sms </title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="client.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+	<!-- Search by tel number -->
+	<div class="col-md-4 col-sm-4">
+		<form>
+			<div class="form-group">
+				<label>Tel number</label>
+				<input class="form-control" type="text" ng-model="searchText">
+			</div>			
+			<input type="submit" class="btn btn-default" value="Search" >
+		</form>
+	</div>
+
+	<div class="col-md-8 col-sm-8">
+		<div ng-repeat="sms in smsList | filter:searchText | orderBy:'date' "  class="alert alert-info">
+			<span class="glyphicon glyphicon-phone"></span> {{sms.num}}
+			<span class="glyphicon glyphicon-calendar"></span> {{sms.date}}
+			<p> {{sms.body}} </p> 			
+		</div>
+	</div>
+</body>
+</html>

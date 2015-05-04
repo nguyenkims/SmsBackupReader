@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<?xml-stylesheet type="text/xsl" href="sms.xsl"?>
+<!--File Created By SMS Backup & Restore v7.13 on 28/08/2014 13:48:52-->
+<smses count="12567">
+  <sms protocol="0" address="+33612345678" date="1299849266000" type="1" subject="null" body="world hello?" toa="0" sc_toa="0" service_center="+33689004000" read="1" status="-1" locked="0" date_sent="0" readable_date="Mar 11, 2011 2:14:26 PM" contact_name="(Unknown)" />
+  <sms protocol="0" address="+33687654321" date="1306500247000" type="1" subject="null" body="hello world" toa="0" sc_toa="0" service_center="+33609003760" read="1" status="-1" locked="0" date_sent="0" readable_date="May 27, 2011 2:44:07 PM" contact_name="Phan Thy" />  
+</smses>
